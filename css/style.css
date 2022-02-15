@@ -1,0 +1,159 @@
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ *,
+ *:before,
+ *:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ :focus,
+ :active {
+   outline: none;
+ }
+ a:focus,
+ a:active {
+   outline: none;
+ }
+ nav,
+ footer,
+ header,
+ aside {
+   display: block;
+ }
+ html,
+ body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+ }
+ input,
+ button,
+ textarea {
+   font-family: inherit;
+ }
+ input::-ms-clear {
+   display: none;
+ }
+ button {
+   cursor: pointer;
+ }
+ button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+ }
+ a,
+ a:visited {
+   text-decoration: none;
+ }
+ a:hover {
+   text-decoration: none;
+ }
+ ul li {
+   list-style: none;
+ }
+ img {
+   vertical-align: top;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-size: inherit;
+   font-weight: inherit;
+ }
+ /*--------------------*/
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h3 {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.contacts__app {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   min-height: 600px;
+   min-width: 320px;
+   border: 1px solid #333;
+   padding: 20px 20px;
+}
+
+.contacts__app h3 {
+   text-align: center;
+}
+
+.item {
+   display: flex;
+   align-items: center;
+   border: 1px solid #333;
+   padding: 5px;
+   justify-content: space-evenly;
+}
+
+.item__info {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+button {
+   padding: 5px 10px;
+}
+
+.fa-pen {
+   font-size: 8px;
+   opacity: 0;
+}
+
+.item__info > * {
+   padding: 5px 5px;
+   cursor: pointer;
+}
+
+.item__info > *:hover .fa-pen {
+   opacity: 1;
+   transition: .3s;
+}
+
+.new__user {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   gap: 5px;
+}
+
+.new__user > input {
+   background-color: rgb(179 255 222);
+   padding: 5px 10px;
+   min-width: 120px;
+}
+
+.add {
+   grid-column: 1/3;
+   grid-row: 3/4;
+   justify-self: center;
+}
+
+.items {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
